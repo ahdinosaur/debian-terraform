@@ -1,0 +1,25 @@
+{
+  "name": "terraform",
+  "version": "0.7.6",
+  "description": "https://www.terraform.io/",
+  "dependencies": {},
+  "scripts": {
+    "key": "hashicorp-deb:key",
+    "download": "hashicorp-deb:download",
+    "build": "hashicorp-deb:build",
+    "package": "hashicorp-deb:package",
+    "install": "hashicorp-deb:install",
+    "preinstall": "npm run key && npm run download && npm run build && npm run package",
+    "clean": "rm -rf .downloads .builds .packages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/debian-terraform.git"
+  },
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/debian-terraform/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/debian-terraform#readme"
+}
